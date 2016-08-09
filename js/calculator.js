@@ -1,6 +1,6 @@
 var app = angular.module('CalculatorApp',[]);
 
-app.controller('CalculatorController', ['$scope', function ($scope) {
+app.controller('CalculatorController', ['$scope', '$timeout', function ($scope, $timeout) {
 
     $scope.options = ['+','-','/','*'];
     var result = 0;
@@ -16,6 +16,7 @@ app.controller('CalculatorController', ['$scope', function ($scope) {
             return;
         }
 
+        $scope.loading = true;
         firstValue = parseFloat($scope.firstVal);
         secondValue = parseFloat($scope.secondVal);
 
@@ -31,11 +32,22 @@ app.controller('CalculatorController', ['$scope', function ($scope) {
         if ($scope.operation == '*') {
             result = firstValue * secondValue;
         }
-        $scope.result = result.toFixed(2);
+
+        $timeout(function () {
+
+            if ($scope.aproximation) {
+                $scope.result = result.toFixed(2);
+            } else {
+                $scope.result = result;
+            }
+            $scope.error = '';
+            $scope.loading = false;
+
+        }, 500);
+
     };
 
     var validateValue = function (value) {
-        console.log(value);
         if (value == null || value == '') {
             return 'Please insert a number';
         }
@@ -43,7 +55,7 @@ app.controller('CalculatorController', ['$scope', function ($scope) {
             return 'Please insert a correct value';
         }
         else {
-            return false;
+            return ;
         }
     }
 

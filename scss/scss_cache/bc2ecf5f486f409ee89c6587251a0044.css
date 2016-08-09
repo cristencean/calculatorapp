@@ -1,7 +1,37 @@
-/* compiled by scssphp v0.0.12 on Mon, 08 Aug 2016 20:51:10 +0200 (0.1104s) */
+/* compiled by scssphp v0.0.12 on Tue, 09 Aug 2016 22:18:49 +0200 (0.015s) */
+
+/* mixins */
+.placeholder input::-webkit-input-placeholder, .calc-container input input::-webkit-input-placeholder, .placeholder input::-moz-placeholder, .calc-container input input::-moz-placeholder, .placeholder input:-ms-input-placeholder, .calc-container input input:-ms-input-placeholder, .placeholder input:-moz-placeholder, .calc-container input input:-moz-placeholder {
+  color: #ccc; }
 
 .calc-container {
-  width: 400px;
+  width: 600px;
+  max-width: 100%;
   margin: auto;
   padding: 20px;
-  border: 1px solid red; }
+  margin-top: 100px; }
+  .calc-container h2 {
+    margin-bottom: 30px;
+    text-align: center; }
+  .calc-container input {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    /* extended classes */ }
+  .calc-container span.text {
+    text-align: right; }
+  .calc-container .select-container {
+    width: 100px; }
+  .calc-container input.error {
+    border-color: #ce4844; }
+  .calc-container span.error {
+    color: #ce4844; }
+  .calc-container .btn {
+    float: right; }
+
+@media only screen and (max-width: 480px) {
+  .calc-container {
+    padding: 5px; }
+    .calc-container span.text {
+      padding: 5px; } }

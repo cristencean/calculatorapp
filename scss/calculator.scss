@@ -1,8 +1,57 @@
+/* mixins */
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+/* extended classes */
+.placeholder {
+  input::-webkit-input-placeholder, input::-moz-placeholder, input:-ms-input-placeholder, input:-moz-placeholder {
+    color: #ccc;
+  }
+}
+
 .calc-container {
-  width: 400px;
+  width: 600px;
+  max-width: 100%;
   margin: auto;
   padding: 20px;
-  border: 1px solid red;
+  margin-top: 100px;
 
+  h2 {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  input {
+    @extend .placeholder;
+    @include border-radius(3px);
+  }
+  span.text {
+    text-align: right;
+  }
+  .select-container {
+    width: 100px;
+  }
+  input.error {
+    border-color: #ce4844;
+  }
+  span.error {
+    color: #ce4844;
+  }
+  .btn {
+    float:right;
+  }
 
+}
+
+@media only screen and (max-width: 480px) {
+  .calc-container {
+    padding: 5px;
+
+    span.text {
+      padding: 5px;
+    }
+  }
 }
