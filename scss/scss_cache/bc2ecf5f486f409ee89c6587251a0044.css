@@ -1,0 +1,7 @@
+/* compiled by scssphp v0.0.12 on Mon, 08 Aug 2016 20:51:10 +0200 (0.1104s) */
+
+.calc-container {
+  width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid red; }
