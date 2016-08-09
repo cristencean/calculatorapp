@@ -13,8 +13,14 @@
   }
 }
 
+body {
+  min-width: 100%;
+  min-height: 100%;
+  background-color: #f5f5f5 !important;
+}
+
 .calc-container {
-  width: 600px;
+  width: 500px;
   max-width: 100%;
   margin: auto;
   padding: 20px;
@@ -33,6 +39,10 @@
   }
   .select-container {
     width: 100px;
+
+    select {
+      font-size: 18px;
+    }
   }
   input.error {
     border-color: #ce4844;

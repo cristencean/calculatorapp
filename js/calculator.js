@@ -32,15 +32,15 @@ app.controller('CalculatorController', ['$scope', '$timeout', function ($scope, 
         if ($scope.operation == '*') {
             result = firstValue * secondValue;
         }
+        $scope.error = '';
 
         $timeout(function () {
 
             if ($scope.aproximation) {
-                $scope.result = result.toFixed(2);
+                $scope.result = (result.toFixed(2))/1;
             } else {
                 $scope.result = result;
             }
-            $scope.error = '';
             $scope.loading = false;
 
         }, 500);

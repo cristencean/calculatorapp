@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="scss/bootstrap.min.css"/>
     </head>
     <body>
-        <div class="calc-container" ng-app="CalculatorApp" ng-controller="CalculatorController">
+        <div class="panel calc-container" ng-app="CalculatorApp" ng-controller="CalculatorController">
             <h2>Calculator app</h2>
             <form ng-submit="calculate()">
                 <fieldset class="form-group">
@@ -39,7 +39,7 @@
                 <fieldset class="form-group checkbox">
                     <label class="col-xs-8 col-xs-offset-4">
                         <input type="checkbox" ng-model="aproximation"/>
-                        <span>With aproximation</span>
+                        <span>With approximation</span>
                     </label>
                 </fieldset>
 
@@ -50,10 +50,12 @@
                     </div>
                 </fieldset>
 
-                <button type="submit" class="btn btn-primary"
-                        ng-disabled="loading"
-                        ng-bind="loading ? 'Loading...' : 'Calculate'">
-                </button>
+                <fieldset class="form-group">
+                    <button type="submit" class="btn btn-primary"
+                            ng-disabled="loading"
+                            ng-bind="loading ? 'Loading...' : 'Calculate'">
+                    </button>
+                </fieldset>
             </form>
         </div>
 
