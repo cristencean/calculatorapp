@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="75d39cbf-9d44-4cd9-a23c-e01940842af4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/calculator.js" afterPath="$PROJECT_DIR$/js/calculator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/calculator.scss" afterPath="$PROJECT_DIR$/scss/calculator.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/scss_cache/bc2ecf5f486f409ee89c6587251a0044.css" afterPath="$PROJECT_DIR$/scss/scss_cache/bc2ecf5f486f409ee89c6587251a0044.css" />
     </list>
     <ignored path="calculatorapp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -237,7 +233,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1604" height="867" extended-state="0" />
+    <frame x="-7" y="0" width="1604" height="867" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
